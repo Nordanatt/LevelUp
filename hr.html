@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HRform</title>
+</head>
+
+<body>
+    <h1>Вакансия: Junior Frontend Developer</h1>
+    <div>
+        <img src="https://memepedia.ru/wp-content/uploads/2019/01/748-kopiya.jpg" width="300" alt="моё смешное лицо" />
+        <div>
+            <span>Имя: Александра</span> <br />
+            <a href="https://github.com/Nordanatt/LevelUp" target="_blank"> Ссылка на репозиторий в GitHub </a> <br>
+            <span>Опыт работы: одна домашка</span>
+        </div>
+    </div>
+    <form>
+        <div>
+            <label>Дата собеседования</label>
+            <input type="date" name="date" />
+        </div>
+        <div>
+            <span>Уровень английского:</span> <br>
+            <label>
+                <input type="radio" name="level" value="bad" /> Плохо
+            </label>
+            <label>
+                <input type="radio" name="level" value="mid" /> Средне
+            </label>
+            <label>
+                <input type="radio" name="level" value="good" /> Хорошо
+            </label>
+            <label>
+                <input type="radio" name="level" value="ex" /> Превосходно
+            </label>
+        </div>
+        <div>
+            <span>Ключевые навыки:</span>
+            <ul>
+                <li>HTML</li>
+                <li>CSS/LESS</li>
+                <li>JavaScript</li>
+            </ul>
+            <input type="text" placeholder="введите навык..." /> <button type="button">Добавить в список</button>
+        </div>
+        <div>
+            <label>Коммуникабельность:</label>
+            <select name="sociability">
+                <option value="outgoing">Рубаха-парень</option>
+                <option value="timid">Застенчивый</option>
+                <option value="neurotic">Нервный тип</option>
+                <option value="humorous">Юморист</option>
+            </select>
+        </div>
+        <div>
+            <label>Желаемая з/п:</label>
+            <input type="number" placeholder="введите значение" />
+        </div>
+        <div>
+            <span>Подходит по критериям:</span> <br>
+            <label>
+                <input type="checkbox" name="ok" value="english" /> Знание английского
+            </label>
+            <label>
+                <input type="checkbox" name="ok" value="money" /> Оклад
+            </label>
+            <label>
+                <input type="checkbox" name="ok" value="skill" /> Навыки
+            </label>
+            <label>
+                <input type="checkbox" name="ok" value="person" /> Сразу видно, что свой человек
+            </label>
+        </div>
+        <div>
+            <span>Образование, курсы и т.п.</span>
+            <table border="1">
+                <tr>
+                    <th>#</th>
+                    <th>Сроки обучения</th>
+                    <th>Наименование учебного заведения, курсов...</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                </tr>
+                <tr>
+                    <th>...</th>
+                </tr>
+            </table>
+        </div>
+
+    </form>
+</body>
+
+</html>
