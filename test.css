@@ -2,7 +2,7 @@
 
 h1 {
     font-family: 'Amatic SC', cursive;
-    margin: 10px 5px;
+    margin: 0 5px 20px;
 }
 
 body {
@@ -26,6 +26,11 @@ body {
     display: flex;
     align-items: center;
     margin: 0px 0px 20px;
+}
+
+.heading {
+    color: rgb(123, 78, 128);
+    font-weight: bold;
 }
 
 .info__image {
@@ -92,7 +97,7 @@ button{
 }
 
 button:hover{
-    background: cornsilk;
+    background: rgb(185, 216, 214);
 }
 
 .skill{
