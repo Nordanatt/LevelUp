@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    margin: 10px 5px;
+}
+
+body {
+    background-image: linear-gradient(#FCA5F1, #B5FFFF);
+}
+
+div {
+    font-family: 'Amatic SC', cursive;
+}
+
+.imagine {
+    border-style: ridge;
+    border-radius: 70px;
+    border-width: 5px;
+    border-color: #d9b5ff;
+}
+
+.information {
+    display: inline-block; vertical-align: top;
+    font-size: 35px;
+    padding: 40px 10px;
+}
