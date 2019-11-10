@@ -56,21 +56,13 @@
     outline: none;
 }
 
-.main{
+.main {
     height: 500px;
     overflow: auto;
     margin: 15px;
 }
 
-.header{
-    display: flex;
-    flex-direction: column;
-    width: 800px;
-    background-color: silver;
-}
-
-
-.icon{
+.icon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
