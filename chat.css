@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Unicase&display=swap');
 
 .page{
+    display: flex;
+    flex-direction: column;
     width: 800px;
     height: 600px;
     background: hsl(0, 0%, 90%);
@@ -20,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 30px;
-    line-height: 1;
+    flex: 0 0 70px;
 }
 
 .creator {
@@ -57,7 +59,7 @@
 }
 
 .main {
-    height: 500px;
+    flex: 1 1 auto;
     overflow: auto;
     margin: 15px;
 }
@@ -86,10 +88,8 @@
 }
 
 .message__date {
-    width: 150px;
     border-right: 1px solid hsl(0, 0%, 50%);
-    flex: 0 0 150px;
-
+    flex: 0 0 135px;
     display: flex;
     align-items: center;
 }
