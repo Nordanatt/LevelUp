@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: local("Proxima Nova Semibold"), local("ProximaNova-Semibold"), url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: local("Proxima Nova Condensed Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Proxima Nova Rg';
+  margin: 0;
+  color: #26262A;
+}
+
+.font-bold, .carousel-section .slide-title, .carousel-section .slide-link {
+  font-weight: bold;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.flex-container, .column-container, .flex-vertical-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-vertical-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel-section {
+  height: 650px;
+  background-image: linear-gradient(63deg, #ff4858 -25%, #8f65ff 118%);
+}
+
+.carousel-section .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 35px;
+}
+
+.carousel-section .slide-description {
+  padding-top: 161px;
+  color: white;
+}
+
+.carousel-section .slide-title {
+  font-size: 36px;
+}
+
+.carousel-section .slide-text {
+  margin: 40px 0;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+.carousel-section .slide-link {
+  text-decoration: none;
+  line-height: 22px;
+  font-size: 14px;
+  color: white;
+  border-bottom: 3px solid white;
+}
+/*# sourceMappingURL=carousel.css.map */

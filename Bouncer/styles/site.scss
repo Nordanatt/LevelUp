@@ -1,0 +1,80 @@
+@import 'base';
+
+header {
+    height: 216px;
+
+}
+
+.top-menu {
+    height: 48px;
+    border-bottom: 1px solid #FAFAFB;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+.top-menu .dd:first-child {
+    margin-right: 20px;
+}
+
+.profile-link,
+.cart-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: $primary-color;
+    margin-right: 41px;
+}
+
+.profile-link > img,
+.cart-link > img {
+    margin-right: 10px;
+}
+
+.cart-controls {
+    margin-right: 58px;
+}
+
+.cart-link {
+    margin-right: 0;
+}
+
+.cart-total {
+    opacity: .5;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.logo-and-nav-container {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 41px;
+    padding-bottom: 36px;
+}
+
+nav {
+    width: 660px;
+    justify-content: space-between;
+}
+
+.nav-link {
+    @extend .font-semibold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $primary-color;
+
+    &.active,
+    &:hover {
+        color: $active-color;
+    }
+}
+
+@import "carousel";
+@import "top-gadgets";
+@import "bestseller";
+@import "footer";

@@ -1,0 +1,809 @@
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: local("Proxima Nova Semibold"), local("ProximaNova-Semibold"), url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: local("Proxima Nova Condensed Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Proxima Nova Rg';
+  margin: 0;
+  color: #26262A;
+}
+
+.font-bold, .carousel-section .slide-title, .carousel-section .slide-link, .gadget-card:nth-child(2n) .card-text .card-title, .gadget-card .card-title {
+  font-weight: bold;
+}
+
+.font-semibold, .nav-link, .bs-title, .bs-link, .product-card.hot:after, .product-card .product-name, .footer-title, .column-title {
+  font-weight: 600;
+}
+
+.flex-container, .column-container, .flex-vertical-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-vertical-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  height: 216px;
+}
+
+.top-menu {
+  height: 48px;
+  border-bottom: 1px solid #FAFAFB;
+}
+
+.top-menu .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.top-menu .dd:first-child {
+  margin-right: 20px;
+}
+
+.profile-link,
+.cart-link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #26262A;
+  margin-right: 41px;
+}
+
+.profile-link > img,
+.cart-link > img {
+  margin-right: 10px;
+}
+
+.cart-controls {
+  margin-right: 58px;
+}
+
+.cart-link {
+  margin-right: 0;
+}
+
+.cart-total {
+  opacity: .5;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.logo-and-nav-container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 41px;
+  padding-bottom: 36px;
+}
+
+nav {
+  width: 660px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #26262A;
+}
+
+.nav-link.active, .nav-link:hover {
+  color: #33A0FF;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: local("Proxima Nova Semibold"), local("ProximaNova-Semibold"), url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: local("Proxima Nova Condensed Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Proxima Nova Rg';
+  margin: 0;
+  color: #26262A;
+}
+
+.font-bold, .carousel-section .slide-title, .carousel-section .slide-link, .gadget-card:nth-child(2n) .card-text .card-title, .gadget-card .card-title {
+  font-weight: bold;
+}
+
+.font-semibold, .nav-link, .bs-title, .bs-link, .product-card.hot:after, .product-card .product-name, .footer-title, .column-title {
+  font-weight: 600;
+}
+
+.flex-container, .column-container, .flex-vertical-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-vertical-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel-section {
+  height: 650px;
+  background-image: linear-gradient(63deg, #ff4858 -25%, #8f65ff 118%);
+}
+
+.carousel-section .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 35px;
+}
+
+.carousel-section .slide-description {
+  padding-top: 161px;
+  color: white;
+}
+
+.carousel-section .slide-title {
+  font-size: 36px;
+}
+
+.carousel-section .slide-text {
+  margin: 40px 0;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+.carousel-section .slide-link {
+  text-decoration: none;
+  line-height: 22px;
+  font-size: 14px;
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: local("Proxima Nova Semibold"), local("ProximaNova-Semibold"), url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: local("Proxima Nova Condensed Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Proxima Nova Rg';
+  margin: 0;
+  color: #26262A;
+}
+
+.font-bold, .carousel-section .slide-title, .carousel-section .slide-link, .gadget-card:nth-child(2n) .card-text .card-title, .gadget-card .card-title {
+  font-weight: bold;
+}
+
+.font-semibold, .nav-link, .bs-title, .bs-link, .product-card.hot:after, .product-card .product-name, .footer-title, .column-title {
+  font-weight: 600;
+}
+
+.flex-container, .column-container, .flex-vertical-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-vertical-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-gadgets-section {
+  margin-top: -55px;
+}
+
+.top-gadgets-section .container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gadget-card {
+  width: 390px;
+  height: 280px;
+  background-color: #F6F7F8;
+  color: #26262A;
+  text-decoration: none;
+  padding-top: 36px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.gadget-card:first-child {
+  background-color: #FF6875;
+  color: white;
+}
+
+.gadget-card:first-child .card-text {
+  width: 220px;
+}
+
+.gadget-card:first-child .card-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.gadget-card:first-child .price {
+  opacity: .75;
+}
+
+.gadget-card:nth-child(2n) .card-image {
+  position: absolute;
+  right: 34px;
+  top: -52px;
+}
+
+.gadget-card:nth-child(2n) .card-text {
+  position: absolute;
+  bottom: 12px;
+  left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 33px;
+}
+
+.gadget-card:nth-child(2n) .card-text .price {
+  margin-left: auto;
+}
+
+.gadget-card:last-child {
+  background-color: #C1C8CE;
+}
+
+.gadget-card:last-child .card-text {
+  width: 160px;
+}
+
+.gadget-card:last-child .price {
+  opacity: .75;
+}
+
+.gadget-card:last-child .card-image {
+  position: absolute;
+  left: 144px;
+  bottom: 20px;
+}
+
+.gadget-card .card-title {
+  font-size: 24px;
+}
+
+.gadget-card .card-text {
+  font-size: 12px;
+  line-height: 20px;
+  margin: 20px 0;
+}
+
+.gadget-card .price {
+  font-size: 24px;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: local("Proxima Nova Semibold"), local("ProximaNova-Semibold"), url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: local("Proxima Nova Condensed Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Proxima Nova Rg';
+  margin: 0;
+  color: #26262A;
+}
+
+.font-bold, .carousel-section .slide-title, .carousel-section .slide-link, .gadget-card:nth-child(2n) .card-text .card-title, .gadget-card .card-title {
+  font-weight: bold;
+}
+
+.font-semibold, .nav-link, .bs-title, .bs-link, .product-card.hot:after, .product-card .product-name, .footer-title, .column-title {
+  font-weight: 600;
+}
+
+.flex-container, .column-container, .flex-vertical-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-vertical-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.best-seller-section {
+  margin: 90px 0;
+}
+
+.bs-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.bs-links {
+  width: 480px;
+  text-align: center;
+  margin: 0 auto 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bs-link {
+  color: #26262A;
+  font-size: 14px;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.bs-link.active, .bs-link:hover {
+  color: #33A0FF;
+  border-bottom: 3px solid #33A0FF;
+}
+
+.bs-products {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (270px)[4];
+      grid-template-columns: repeat(4, 270px);
+  grid-auto-rows: 349px;
+  grid-gap: 30px;
+}
+
+.product-card {
+  border: 3px solid #f6f7f8;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.product-card.hot:after {
+  content: 'Hot';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ff4858;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.67;
+  border-radius: 2px;
+  padding: 0 8px;
+}
+
+.product-card .product-img-container {
+  position: relative;
+  padding: 19px 0 20px;
+  border-bottom: 1px solid #f6f7f8;
+}
+
+.product-card .product-img-container .product-controls {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-card .product-img-container .product-controls .product-control {
+  cursor: pointer;
+  border: 2px solid rgba(51, 160, 255, 0.25);
+  background: none;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product-card .product-img-container .product-controls .product-control + .product-control {
+  margin-left: 10px;
+}
+
+.product-card .product-img-container:hover .product-img {
+  opacity: 0.1;
+}
+
+.product-card .product-img-container:hover .product-controls {
+  opacity: 1;
+}
+
+.product-card .product-name {
+  padding: 15px 0px;
+}
+
+.product-card .star:not(.active) {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.product-card .price {
+  font-size: 16px;
+  line-height: 21px;
+  padding: 10px 0;
+}
+
+.product-card .price .current-price {
+  color: #ff4858;
+}
+
+.product-card .price .old-price {
+  color: #c1c8ce;
+  text-decoration: line-through;
+  margin-left: 13px;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: local("Proxima Nova Semibold"), local("ProximaNova-Semibold"), url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: local("Proxima Nova Condensed Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Proxima Nova Rg';
+  margin: 0;
+  color: #26262A;
+}
+
+.font-bold, .carousel-section .slide-title, .carousel-section .slide-link, .gadget-card:nth-child(2n) .card-text .card-title, .gadget-card .card-title {
+  font-weight: bold;
+}
+
+.font-semibold, .nav-link, .bs-title, .bs-link, .product-card.hot:after, .product-card .product-name, .footer-title, .column-title {
+  font-weight: 600;
+}
+
+.flex-container, .column-container, .flex-vertical-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-vertical-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer {
+  border: 2px solid #f6f7f8;
+  border-left: none;
+  border-right: none;
+  padding: 55px 0px 0;
+}
+
+.footer-general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 38px;
+  border-bottom: 2px solid #f6f7f8;
+}
+
+.footer-general-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+
+.footer-general-item .item-text {
+  width: 268px;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 24px;
+}
+
+.footer-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 25px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 18px;
+  line-height: 0.85;
+}
+
+.social-icon + .social-icon {
+  margin-left: 39px;
+}
+
+.column-title {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 22px;
+}
+
+.column-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.column-links > a {
+  font-size: 14px;
+  margin-bottom: 14px;
+  line-height: 1;
+  text-decoration: none;
+  color: #262626;
+}
+
+.footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 45px 0px;
+}
+
+.link-column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+
+.credits-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 92px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pay-logos img {
+  margin-left: 20px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #c1c8ce;
+}
+/*# sourceMappingURL=site.css.map */
