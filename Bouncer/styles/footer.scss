@@ -8,6 +8,7 @@
     padding: 55px 0px 0;
 }
 
+
 .footer-general {
     display: flex;
     padding-bottom: 38px;
@@ -16,6 +17,10 @@
 
 .footer-general-item {
     flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 
     .item-text {
         width: 268px;
