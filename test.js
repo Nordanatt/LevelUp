@@ -66,6 +66,13 @@ while (!found) {
 
 console.log(result);
 
+//task 7.5 binary
+function task7_5_binary(n) {
+    return n;
+}
+console.log(task7_5_binary(15));
+
+
 //task 8
 let a = 5;
 let factorial = 1;
@@ -156,18 +163,10 @@ task13(array13);
 console.log(array13);
 
 //task 14
-function isArraySorted(array) {
-    for (let index = 0; index < array.length - 1; index++) {
-        const element = array[index];
-        const element2 = array[index+1];
-        if (element > element2)
-            return false;
-    }
-    return true;
-}
-
 function task14(array) {
-    while (!isArraySorted(array)) {
+    let wereAnySwaps;
+    do {
+        wereAnySwaps = false;
         for (let index = 0; index < array.length - 1; index++) {
             const element = array[index];
             const element2 = array[index+1];
@@ -175,9 +174,11 @@ function task14(array) {
             {
                 array[index+1] = element;
                 array[index] = element2;
+                wereAnySwaps = true;
             }
         }
     }
+    while (wereAnySwaps);
 }
 
 let arrayToSort = [5, 1, 3, 4, 2];
@@ -233,3 +234,135 @@ function task15_select(array) {
 const arrayToSortUsingSelect = [0, 16, -6, 1, 6, 2];
 task15_select(arrayToSortUsingSelect);
 console.log(arrayToSortUsingSelect);
+
+//task 16
+function task16(x,y) {
+    let result = [];
+    for (let i = 0; i < y; i++) {
+        let row = [];
+        result.push(row);
+        for (let j = 0; j < x; j++) {
+            row.push(Math.round(Math.random() * 10));
+        }
+    }
+    return result;
+}
+
+const twoDimensionalArray = task16(3,4);
+console.log(twoDimensionalArray);
+
+//task 17
+function task17(arr) {
+    let count = 0;
+
+    for (let i = 1; i < arr.length - 1; i++) {
+        const prevRow = arr[i - 1];
+        const row = arr[i];
+        const nextRow = arr[i + 1];
+        for (let j = 1; j < row.length - 1; j++) {
+            const element = row[j];
+            if (element > row[j-1]
+                && element > row[j+1]
+                && element > prevRow[j]
+                && element > nextRow[j])
+                count++;
+        }
+    }
+
+    return count;
+}
+
+let test17 = [
+    [1,2,3,4,5],
+    [1,2,3,4,5],
+    [1,2,3,4,5],    
+    [5,8,6,7,0],
+    [1,2,3,4,5],
+];
+let result17 = task17(test17);
+console.log(result17);
+
+//task 18
+function task18(array) {
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < i; j++) {
+            let element = array[i][j];
+            array[i][j] = array[j][i];
+            array[j][i] = element;
+        }
+    }
+}
+
+const test18 = [
+    [1,2,3,4],
+    [1,2,3,4],
+    [1,2,3,4],
+    [1,2,3,4],
+];
+task18(test18);
+console.log(test18);
+
+//task 19
+function task19(x, y) {
+    let result = [];
+    for (let i = 0; i < y; i++) {
+        let row = [];
+        for (let j = 0; j < x; j++) {
+            row.push(0);
+        }
+        result.push(row);
+    }
+    
+    return result;
+}
+let result19 = task19(4, 3);
+console.log(task19);
+
+//task 20
+let matrix1 = [
+    [1,2,3,4],
+    [1,2,3,4],
+    [1,2,3,4]
+];
+
+let matrix2 = [
+    [1,2,3],
+    [1,2,3],
+    [1,2,3],
+    [1,2,3]
+];
+
+function task20(m1, m2) {
+    let result = [];
+
+    // идем по строкам первой матрицы
+    for (let k = 0; k < m1.length; k++) {
+        const resultRow = [];
+        // идем по столбцам второй матрицы
+        for (let j = 0; j < m2[k].length; j++) {
+            let sum = 0;
+            // идем по столбцам первой матрицы
+            for (let i = 0; i < m1[k].length; i++) {
+                sum = sum + m1[k][i] * m2[i][j];
+            }
+            resultRow.push(sum);
+        }
+        result.push(resultRow);
+    }
+
+    return result;
+}
+
+const matrix_1 = [
+    [1,2,3,4],
+    [1,2,3,4],
+    [1,2,3,4]
+];
+const matrix_2 = [
+    [1,2,3,4],
+    [1,2,3,4],
+    [1,2,3,4],
+    [1,2,3,4]
+];
+let task20Result = task20(matrix_1, matrix_2);
+console.log(task20Result);
